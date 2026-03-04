@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<meta name="theme-color" content="#071022" />
+
+<link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+
+<link rel="apple-touch-icon" href="%PUBLIC_URL%/icon-192.png" />
+
+<title>Diligências — App</title>
+
+</head>
+
+<body>
+
+<noscript>Você precisa habilitar o JavaScript.</noscript>
+
+<div id="root"></div>
+
+<script>
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", () => {
+    navigator.serviceWorker.register("/sw.js");
+  });
+}
+</script>
+
+</body>
+</html>
